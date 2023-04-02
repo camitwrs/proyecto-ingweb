@@ -31,12 +31,12 @@ a{
 }
 
 h1{
-    font-weight: 900;
+    font-weight: bolder;
     font-size: 2rem;
 }
 
 h2{
-    font-weight: 700;
+    font-weight: bold;
     font-size: 1.5rem;
 }
 
@@ -48,6 +48,51 @@ section {
     margin: 0 20px;
 }
 
+.ingresar-style{
+    height: 90vh;
+    h1{
+        font-size: 1.8rem;
+    }
+    label{
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    input{
+        border-radius: 5px;
+        border-width: thin;
+        border-color: $color-text-secundary;
+        border-style: solid;
+        &::placeholder{
+            color: $color-text-secundary;
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+    p{
+        color: $color-text-secundary;  
+        text-align: center;
+    }
+    a{
+        color: $color-secundary;
+        font-size: 12px;
+        &:hover{
+            font-weight: normal;
+        }
+    }
+    button{
+        width: 100%;
+        margin-top: 12px;
+        padding: 10px;
+    }
+}
+
+.form-group{
+    margin-bottom: 12px;
+}
+
+.form-check{
+    margin-bottom: 12px;
+}
 
 /* Seccion NAVBAR */
 .navbar{
@@ -62,6 +107,12 @@ section {
     justify-content: space-between;
 }
 
+.group-logo-name{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo-name{
     margin: 10px;
     font-weight: 700;
@@ -70,16 +121,19 @@ section {
 
 /* Seccion HERO o PRINCIPAL*/
 #section-hero{
-    min-height: 600px;
+    height: 90vh;
     .container{
         justify-content: space-between;
         padding: 8rem 0;
-    }  
+        img{
+            width: 100%;
+        }
+    }
 }
 
 /* Seccion SOBRE NOSOTROS */
 #section-sobre-nosotros{
-    height: 600px;
+    height: 80vh;
     padding-bottom: 100px;
     text-align: center;
     .container{
@@ -92,9 +146,9 @@ section {
 
 /* Seccion CONTACTO o FOOTER */
 #section-contacto{
-    min-height: 40vh;
     text-align: center;
     .container{
+        height: 40vh;
         h2{
             color: $color-primary;
             margin-bottom: 20px;
@@ -106,7 +160,7 @@ section {
     .copyright{
         color: $color-text-primary;
         font-size: 0.6rem;
-        padding-top: 10rem;
+        padding-top: 12rem;
         padding-bottom: 0.8rem;
         text-align: center;
     }
@@ -114,6 +168,10 @@ section {
 
 /* RESPONSIVE DESIGN con breakpoint medium-movil*/
 @media (min-width: $breakpoint-movil) {
+    html{
+        scroll-behavior: smooth;
+    }
+
     p{
         font-size: 1.2rem;
     }
@@ -124,9 +182,11 @@ section {
             font-size: 1.5rem;
         }
     }
+
     .navbar-collapse {
         justify-content: flex-end;
     }
+
     .navbar li{
         padding: 0px 20px;
     }
@@ -137,6 +197,10 @@ section {
             h1{
                 font-size: 3rem;
             }
+            img{
+                width: 30%;
+            }
+            
         }  
     }
 
@@ -145,4 +209,10 @@ section {
         text-align: end;
         padding-right: 10px;
     }
+
+    .ingresar-style{
+        margin: 0 200px;
+        height: 80vh;
+    }
+
 }

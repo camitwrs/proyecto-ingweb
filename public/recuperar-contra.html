@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar</title>
+    <link href="assets/img/favicon.svg" rel="icon" type="image/x-icon" >
+      <!-- Bootstrap 5.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- CSS propio -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <!--Barra con logo-->
+    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+      <div class="container-fluid">
+        <!--Logo-->
+        <a class="navbar-brand" href="index.html">
+          <div class="group-logo-name d-flex">
+            <img src="assets/img/logo.png" width="50" alt="Logo: Eclipse naranja y una P adentro">
+            <h1 class="logo-name">PeluAdopta</h1>
+          </div> 
+        </a>
+    </nav>
+    <!--Formulario-->
+    <section class="ingresar-style">
+      <h1>Contraseña Olvidada</h1>
+      <p>Ingresa tu correo electrónico y recibirás un enlace para restaurar tu contraseña.</p>
+      <form action="#">
+        <div class="form-group">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" class="form-control" id="correo" aria-describedby="emailHelp" placeholder="Ingrese su correo electrónico">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-warning">Enviar enlace</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
