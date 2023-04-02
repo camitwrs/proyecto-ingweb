@@ -31,32 +31,32 @@
     <section class="ingresar-style">
       <h1>Registrarse</h1>
       <p>A ponerse peludos!</p>
-      <form action="#">
+      <form action="#" novalidate>
         <fieldset class="form-group">
           <legend class="col-form-label pt-0">Quieres</legend>
           <div class="form-check">
             <label class="form-check-label" for="radio1">Adoptar</label>
-            <input class="form-check-input" type="radio" name="gridRadios" id="radio1" value="option1" checked>
+            <input class="form-check-input" type="radio" name="gridRadios" id="inputRadioAdoptar" value="opcionAdoptar" checked>
           </div>
           <div class="form-check">
             <label class="form-check-label" for="radio2">Publicar</label>
-            <input class="form-check-input" type="radio" name="gridRadios" id="radio2" value="option2">
+            <input class="form-check-input" type="radio" name="gridRadios" id="inputRadioPublicar" value="opcionPublicar">
           </div>
           <div class="form-group">
             <label for="nombre">Nombre de usuario</label>
-            <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Ingrese su nombre de usuario">
+            <input type="text" class="form-control" id="inputNombre" aria-describedby="emailHelp" placeholder="Ingrese su nombre de usuario" required>
           </div>
           <div class="form-group">
             <label for="correo">Correo electrónico</label>
-            <input type="email" class="form-control" id="correo" aria-describedby="emailHelp" placeholder="Ingrese su correo electrónico">
+            <input type="email" class="form-control" id="inputCorreo" aria-describedby="emailHelp" placeholder="Ingrese su correo electrónico" required>
           </div>
           <div class="form-group">
             <label for="contra">Contraseña</label>
-            <input type="password" class="form-control" id="contra" placeholder="Ingrese su contraseña">
+            <input type="password" class="form-control" id="inputContra" placeholder="Ingrese su contraseña" required>
           </div>
           <div class="form-group">
             <label for="recontra">Confirmar Contraseña</label>
-            <input type="password" class="form-control" id="confirmar-contra" placeholder="Repita su contraseña">
+            <input type="password" class="form-control" id="inputConfirmar" placeholder="Repita su contraseña" required>
           </div>
           <div class="form-group">
             <button type="submit" class="btn btn-warning">Registrarse</button>

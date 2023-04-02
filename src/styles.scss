@@ -12,6 +12,12 @@ $shadow-box: 0 2px 5px 0 rgba(0,0,0,0.1);
 
 $breakpoint-movil: 768px;
 
+$unit: 10px;
+
+@function size($value){
+    @return $value *  $unit;
+}
+
 /* GENERALES */
 *{
     padding: 0; margin: 0; box-sizing: border-box;
