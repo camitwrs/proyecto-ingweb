@@ -25,4 +25,5 @@ Boton “ Me interesa”:
  
   Este botón funcionara principalmente para que los adoptantes puedan registrar las mascotas en las que estan interesadas, y de la misma manera se notifique al publicante, quienes estan interesados en la mascota publicada. 
 
-
+# En el siguiente link se encuentra el diseño en figma de las interfaces necesarias para la página web.
+https://www.figma.com/file/PxMwRv1S3KNgGwn0JPPajD/Ingresar-Mobile?node-id=0%3A1&t=ZIb3EkFAj4pGIRpr-1 
