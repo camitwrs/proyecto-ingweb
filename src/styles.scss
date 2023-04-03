@@ -1,6 +1,5 @@
 /* Estilizacion segun principio MOBILE FIRST*/
 
-/* VARIABLES */
 $color-primary: #FFB627;
 $color-secundary: #E2711D;
 $color-text-primary: #000000;
@@ -18,14 +17,22 @@ $unit: 10px;
     @return $value *  $unit;
 }
 
-/* GENERALES */
 *{
     padding: 0; margin: 0; box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
     background-color: $color-bg;
     font-family: $font;
+}
+
+header{
+    position: fixed;
+    width: 100%;
 }
 
 a{
@@ -51,7 +58,8 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 10px 0;
+    padding: 12rem;
 }
 
 .ingresar-style{
@@ -100,9 +108,10 @@ section {
     margin-bottom: 12px;
 }
 
-.main-view{
-    margin: 20px;
-    padding: 20px;
+#main-view{
+    margin: 0;
+    padding: 8rem 0;
+    overflow-y: auto;
     text-align: center;
     p{
         color: $color-text-secundary;
@@ -110,11 +119,14 @@ section {
     .descripcion{
         text-align: start;
     }
+    .icono{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
 }
 
-
-/* Seccion NAVBAR */
 .navbar{
+    padding: 5px 30px;
     box-shadow: $shadow-box;
     button{
         margin: 10px;
@@ -138,7 +150,6 @@ section {
     font-size: 1.5rem;
 }
 
-/* Seccion HERO o PRINCIPAL*/
 #section-hero{
     height: 90vh;
     .container{
@@ -150,7 +161,6 @@ section {
     }
 }
 
-/* Seccion SOBRE NOSOTROS */
 #section-sobre-nosotros{
     height: 80vh;
     padding-bottom: 100px;
@@ -163,7 +173,6 @@ section {
     }
 }
 
-/* Seccion CONTACTO o FOOTER */
 #section-contacto{
     text-align: center;
     .container{
@@ -187,16 +196,12 @@ section {
 
 /* RESPONSIVE DESIGN con breakpoint medium-movil*/
 @media (min-width: $breakpoint-movil) {
-    html{
-        scroll-behavior: smooth;
-    }
 
     p{
         font-size: 1rem;
     }
 
     .navbar{
-        padding: 5px 30px;
         button{
             font-size: 1rem;
         }
@@ -232,4 +237,7 @@ section {
     .ingresar-style{
         min-height: 400px;
     }
+
 }
+
+
