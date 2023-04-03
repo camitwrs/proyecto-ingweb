@@ -51,61 +51,24 @@
     </header>
     
     <!--Profile view-->
-    <section>
-      <h2 class="m-3">Nueva publicación</h2>
-      <form action="#" novalidate>
-        <div class="d-flex flex-row justify-content-between">
-          <div class="form-group col-md-6">
-            <label for="inputTipo">Tipo</label>
-            <select id="inputTipo" class="form-control-sm bg-warning">
-              <option value="opcionPerro" selected>Perro</option>
-              <option value="opcionGato">Gato</option>
-            </select>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputSexo">Sexo</label>
-            <select id="inputSexo" class="form-control-sm bg-warning">
-              <option value="opcionMacho" selected>Macho</option>
-              <option value="opcionHembra">Hembra</option>
-            </select>
-          </div>
+    <section class="profile" >
+      <h2 class="m-2">Mi perfil</h2>
+      <div class="container d-flex flex-column align-items-center">
+        <img src="assets/img/profile-ejemplo.png" alt="Foto de perfil">
+        <div class="form-group">
+          <label for="inputCorreo">Correo electrónico:</label>
+          <p>correo@domain.cl</p>
         </div>
         <div class="form-group">
-          <label for="inputNombre">Nombre</label>
-          <input type="text" class="form-control" id="inputNombre" placeholder="Ingrese el nombre del animal" required>
+          <label for="inputNombre">Nombre de usuario:</label>
+          <p>usuario</p>
         </div>
         <div class="form-group">
-          <label for="inputCiudad">Ciudad</label>
-          <input type="text" class="form-control" id="inputCiudad" placeholder="Ingrese la ciudad donde se encuentra" required>
+          <label for="publicaciones">Publicaciones activas:</label>
+          <p>4</p>
         </div>
-        <div class="form-group">
-          <label for="inputTamanio">Tamaño</label>
-          <select id="inputTamanio" class="form-control">
-            <option value="opcionAdulto" selected>Adulto</option>
-            <option value="opcionBebe">Bebé</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="inputMedico">Antecedentes médicos</label>
-          <textarea class="form-control overflow-auto" id="inputMedico" rows="2" placeholder="Ingrese aquí vacunas, cirugías, etc"></textarea>
-        </div>
-        <div class="form-group">
-          <label for="inputDescripcion">Descripción</label>
-          <textarea class="form-control overflow-auto" id="inputDescripcion" rows="2" placeholder="Ingrese aquí datos importantes sobre el animal"></textarea>
-        </div>
-        <!--Archivos-->
-        <div class="form-group">
-          <form method="#" enctype="multipart/form-data">
-            <div class="form-group">
-              <div class="custom-file">
-                <label class="custom-file-label" for="customFile">Fotos</label>
-                <input type="file" name="files[]" multiple class="custom-file-input form-control" id="customFile">
-              </div>
-            </div>
-          </form>
-        </div>
-        <a href="#"><button type="button" name="subir" value="upload" class="btn btn-dark m-2">Publicar</button></a>
-      </form>
+      </div>
+      <a href="#"><button type="button" class="btn btn-warning btn mt-2">Editar mi información</button></a>
     </section>
 
   <!-- Bootstrap v5.2 -->
