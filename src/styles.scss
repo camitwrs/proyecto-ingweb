@@ -3,7 +3,7 @@
 $color-primary: #FFB627;
 $color-secundary: #E2711D;
 $color-text-primary: #000000;
-$color-text-secundary: #949CA9; 
+$color-text-secundary: #85888b; 
 $color-bg: #FFFFFF;
 $font: 'Poppins', sans-serif;
 
@@ -108,6 +108,7 @@ section {
     margin-bottom: 12px;
 }
 
+
 .main-view{
     margin: 0;
     padding: 8rem 0;
@@ -200,6 +201,61 @@ section {
     }
 }
 
+    /* ----- -----  Estilos para Validacion ----- ----- */
+    .formulario__grupo-correcto .form-control {
+        border: 2px solid #00ff11; 
+    }
+
+    .formulario__grupo-correcto .formulario__label{
+        color: #23ac2c; 
+    }
+
+    .formulario__grupo-incorrecto .form-control {
+        border: 3px solid #bb2929;
+    }
+
+    .formulario__grupo-incorrecto .formulario__label {
+        color: #bb2929;
+    }
+
+    .formulario__input-error {
+        display: none;
+        font-size: 15px;
+    }
+
+    .formulario__input-error-activo{
+        display: block;
+        
+    }
+    .formulario__mensaje-exito {
+        height: 45px;
+        line-height: 45px;
+        background: #0fda15;
+        padding: 0 15px;
+        border-radius: 10px;
+        color: white !important;
+        display: none;
+        margin-top: 10px;
+    }
+    
+    .formulario__mensaje-exito-activo {
+        display: block;
+    }
+
+    
+    .formulario__mensaje {
+        height: 45px;
+        line-height: 45px;
+        background: #e01515;
+        padding: 0 15px;
+        border-radius: 10px;
+        display: none;
+        color: white !important;    
+    }
+
+    .formulario__mensaje-activo {
+        display: block;
+    }
 /* RESPONSIVE DESIGN con breakpoint medium-movil*/
 @media (min-width: $breakpoint-movil) {
 
@@ -242,6 +298,7 @@ section {
     .ingresar-style{
         min-height: 400px;
     }
+    
 
 }
 

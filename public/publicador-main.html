@@ -22,7 +22,7 @@
       <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
         <div class="container-fluid">
           <!--Logo-->
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand">
             <div class="group-logo-name d-flex">
               <img src="assets/img/logo.png" width="50" alt="Logo: Eclipse naranja y una P adentro">
               <h1 class="logo-name">PeluAdopta</h1>
@@ -55,7 +55,7 @@
     <section class="main-view">
       <h2 class="m-2">Hola, nombre_usuario</h2>
       <!--Galeria-->
-      <div class="container">
+      <div class="container gallery-container">
         <p>Tus mascotas en adopción:</p> 
         <div class="row">
           <!-- Gallery item -->
@@ -88,9 +88,9 @@
           <div class="col-12 col-md-6 col-lg-4 mb-4">
             <div class="bg-white rounded shadow"><img src="https://static9.depositphotos.com/1034382/1194/i/600/depositphotos_11946348-stock-photo-stray-dog.jpg" alt="" class="img-fluid card-img-top">
               <div class="p-4">
-                <h4><a href="#" class="text-dark">nombre_mascota</a></h4>
+                <h4><a href="" class="text-dark">nombre_mascota</a></h4>
                 <p class="descripcion small text-muted mb-0">Ciudad: ...</p>
-                <a href="#"><div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                <a href=""><div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
                   <p class="small mb-0"><span class="font-weight-bold">Interesados</span></p>
                   <span class="badge text-black">5</span>
                 </div>
@@ -100,10 +100,14 @@
           <!--Se van agregando más gallery items...-->
       </div>
       <hr>
-      <a href="nueva-publicacion.html"><button type="button" class="btn btn-warning btn-lg mt-2">+ Nueva publicación</button></a>
+     <button id="btn-nueva-publi" type="button" class="btn btn-warning btn-lg mt-2">+ Nueva publicación</button>
     </section>
 
-  <!-- Bootstrap v5.2 -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- Bootstrap v5.2 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!-- JS propio -->
+    <script src="js/app.js"></script>
   </body>
 </html>

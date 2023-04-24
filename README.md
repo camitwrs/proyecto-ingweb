@@ -1,4 +1,4 @@
-# Analisis de requerimientos
+# EP 1.1
 Registro:
   
  La funcionalidad de registro se distribuye en 2 partes, las cuales dependen de si el usuario desea registrarse como adoptante o como persona que desea publicar al animal para su futura adopción. Este registro se divide ya que se busca agregar distintas funcionalidades para cada tipo de usuario.
@@ -25,5 +25,17 @@ Boton “ Me interesa”:
  
   Este botón funcionara principalmente para que los adoptantes puedan registrar las mascotas en las que estan interesadas, y de la misma manera se notifique al publicante, quienes estan interesados en la mascota publicada. 
 
-# En el siguiente link se encuentra el diseño en figma de las interfaces necesarias para la página web.
+# EP 1.2 
+En el siguiente link se encuentra el diseño en figma de las interfaces necesarias para la página web.
 https://www.figma.com/file/PxMwRv1S3KNgGwn0JPPajD/Ingresar-Mobile?node-id=0%3A1&t=ZIb3EkFAj4pGIRpr-1 
+
+# EP 2.1
+- Principio Mobile First
+- Breakpoint medium (Móvil default)
+- Uso de preprocesador SASS
+
+# EP 2.2
+- Interacción frontend: Redirección a través de botones con Jquery y creación de una nueva publicación (en publicador-main.html)
+
+# EP 2.3
+- Validación en tiempo real de formulario (en registro.html)
