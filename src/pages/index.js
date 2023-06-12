@@ -1,0 +1,5 @@
+export * from './LoginPage'
+export * from './HomePage'
+export * from './MainPagePublicador'
+export * from './MainPageAdoptante'
+export * from './RegisterPage'

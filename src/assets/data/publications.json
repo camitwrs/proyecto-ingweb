@@ -1,0 +1,70 @@
+[
+    {
+        "id": 1,
+        "tipo": "Perro",
+        "sexo": "Macho",
+        "nombre": "Skapi",
+        "ciudad": "Villa alemana",
+        "tamano": "Adulto",
+        "antecedentes_medicos": "Vacunas esenciales, esterilización, cirugía de pata, medicamentos para el estómago",
+        "descripcion": "Pastor alemán de 8 años. Juguetón, cariñoso y sociable. Ha convivido con gatos y perros de distintas edades y no ha tenido ningún problema.",
+        "fotos": [
+        "https://cdn.shopify.com/s/files/1/0799/5301/articles/german_shepherd_Russian.jpg?v=1635878121",
+        "https://hips.hearstapps.com/hmg-prod/images/gettyimages-998972474-641ad5ab0f8a2.jpg?crop=0.668xw:1.00xh;0.170xw,0&resize=1200:*",
+        "https://www.animalfiel.com/wp-content/uploads/2020/10/tipos-de-pastor-aleman.jpg"
+        ]
+    },
+    {
+        "id": 2,
+        "tipo": "Gato",
+        "sexo": "Hembra",
+        "nombre": "Clara",
+        "ciudad": "Quilpue",
+        "tamano": "Bebe",
+        "antecedentes_medicos": "Sin vacunas ni esterilización",
+        "descripcion": "Gatito siamés de 2 meses. Lo encontramos abandonado en una caja y lo recojimos y cuidamos, pero no podemos mantenerlo. Ha convivido con otros gatos y se ha mostrado un tanto asustadizo.",
+        "fotos": [
+        "https://www.vitapets.cl/wp-content/uploads/2020/12/gatos-siames-bebes-cuatro.jpg",
+        "https://www.vitapets.cl/wp-content/uploads/2020/12/gatos-siames-bebes.jpg"
+        ]
+    },
+    {
+        "id": 3,
+        "tipo": "Gato",
+        "sexo": "Macho",
+        "nombre": "Garu",
+        "ciudad": "Melipilla",
+        "tamano": "Adulto",
+        "antecedentes_medicos": "Todas las vacunas y esterilización. Con microchip",
+        "descripcion": "Gato romano de 3 años. Dormilón, le gusta estar en los techos y de personalidad tranquila.",
+        "fotos": [
+        "https://wikigato.com/wp-content/uploads/2014/10/Gato_romano.jpg"
+        ]
+    },
+    {
+        "id": 4,
+        "tipo": "Gato",
+        "sexo": "Macho",
+        "nombre": "Tommy",
+        "ciudad": "Villa alemana",
+        "tamano": "Adulto",
+        "antecedentes_medicos": "Todas las vacunas y esterilización.",
+        "descripcion": "Gato DPC de 2 años. Juguetón, cariñoso y territorial. Tiene problemas para convivir con otros gatos",
+        "fotos": [
+        "https://www.feelcats.com/wp-content/uploads/2018/10/gato-gris-comun.jpg"
+        ]
+    },
+    {
+        "id": 5,
+        "tipo": "Perro",
+        "sexo": "Macho",
+        "nombre": "Pugi",
+        "ciudad": "Quilpue",
+        "tamano": "Bebe",
+        "antecedentes_medicos": "Todas las vacunas y esterilización pendiente.",
+        "descripcion": "Pug de 1 año. Juguetón, enérgico y cariñoso. No tiene problemas para convivir con otros tipos de mascotas.",
+        "fotos": [
+        "https://soyunperro.com/wp-content/uploads/2019/08/perro-pug-en-el-jardin-770x470.jpg"
+        ]
+    }
+]
