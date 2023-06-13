@@ -1,26 +1,26 @@
 [
     {
-        "tipo": "adoptar",
-        "username": "joklit",
+        "tipoUsuario": "Adoptar",
+        "nombre": "joklit",
         "correo": "abc@gmail.com",
-        "contrasenya": "123asSd"
+        "password": "123asSd"
     },
     {
-        "tipo": "publicar",
-        "username": "kimK",
+        "tipoUsuario": "Publicar",
+        "nombre": "kimK",
         "correo": "hij@gmail.com",
-        "contrasenya": "321Kjh"
+        "password": "321Kjh"
     },
     {
-        "tipo": "adoptar",
-        "username": "cabardi",
+        "tipoUsuario": "Adoptar",
+        "nombre": "cabardi",
         "correo": "efg@gmail.com",
-        "contrasenya": "lkJop"
+        "password": "lkJop"
     },
     {
-        "tipo": "publicar",
-        "username": "doglover",
+        "tipoUsuario": "Publicar",
+        "nombre": "doglover",
         "correo": "qwsds@gmail.com",
-        "contrasenya": "jkLi"
+        "password": "jkLi"
     }
 ]
