@@ -1,5 +1,7 @@
-# proyecto-ingweb
-ICI4240
+# PeluADopta
+
+# Entrega Parcial 1
+
 # EP 1.1
 Registro:
 
@@ -31,6 +33,8 @@ Boton “ Me interesa”:
 En el siguiente link se encuentra el diseño en figma de las interfaces necesarias para la página web.
 https://www.figma.com/file/PxMwRv1S3KNgGwn0JPPajD/Ingresar-Mobile?node-id=0%3A1&t=ZIb3EkFAj4pGIRpr-1 
 
+# Entrega Parcial 2
+
 # EP 2.1
 - Principio Mobile First
 - Breakpoint medium (Móvil default)
@@ -41,3 +45,17 @@ https://www.figma.com/file/PxMwRv1S3KNgGwn0JPPajD/Ingresar-Mobile?node-id=0%3A1&
 
 # EP 2.3
 - Validación en tiempo real de formulario (en registro.html)
+
+# Entrega Parcial 3
+
+# EP 3.1
+- Migración del proyecto (EP1 y EP2) a Framework ReactJS + Vite.
+
+# EP 3.2
+- Se crearon las colecciones users.json y publications.json
+
+# EP 3.3
+- Existe carga de datos de usuarios en LoginPage.jsx y de mascotas en Publications.jsx
+
+# EP 3.4
+- Se usó el hook useForm para algunas validaciones.
