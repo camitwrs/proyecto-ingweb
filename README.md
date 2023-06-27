@@ -28,7 +28,7 @@ Backend:
 
 # Cómo ejecutar
 
-- Instalar las depencias con npm install
+- Instalar las depencias con npm install, en la carpeta raiz y en la carpeta client con cd client.
 - Correr servidor local de mongodb: en la terminal de su sistema, ejecutar mongod y mantener la terminal abierta (o sino no se podrá ejercer la conexión)
 - Abrir 2 terminales en vscode: una para el backend y otra para el frontend.
 - Para la terminal del backend ejecutar el comando npm run dev (correrá express) 
