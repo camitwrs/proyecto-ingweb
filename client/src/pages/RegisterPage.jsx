@@ -2,10 +2,11 @@ import {useState, useEffect} from 'react'
 import { useNavigate } from 'react-router-dom';
 import {useForm} from 'react-hook-form';
 import { useAuth } from '../context/AuthContext';
+import userModel from '../../../src/models/user.model';
 
 export const RegisterPage = () => {
 
-  const {signup, isAuthenticated, errors: registerErrors} = useAuth()
+  const {signup, isAuthenticated, errors: registerErrors, user} = useAuth()
   const { register, watch, handleSubmit, formState:{errors }}= useForm();
   const [selectedOption, setSelectedOption] = useState('Adoptar');
 
@@ -19,6 +20,7 @@ export const RegisterPage = () => {
     setSelectedOption(event.target.value);
   }
 
+  // falta redireccionar segun tipo de usuario, por defecto va a adoptar
   useEffect(() => {
     if(isAuthenticated) navigate("/adoptar")
   }, [isAuthenticated])

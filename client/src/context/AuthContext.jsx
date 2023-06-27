@@ -1,7 +1,10 @@
+// falta tbn publicationsContext
 
+// authContext debe ser usado en las paginas de autenticacion 
 import { useEffect } from "react";
 import { createContext, useContext, useState } from "react";
-import { registerRequest, loginRequest } from "../api/auth";
+import { registerRequest, loginRequest, verifyTokenRequest } from "../api/auth";
+import Cookies from "js-cookie";
 
 const AuthContext = createContext();
 
@@ -15,6 +18,7 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [errors, setErrors] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   // limpiar errores dsp de 5 segundos
   useEffect(() => {
@@ -50,11 +54,44 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  const logout = () => {
+    Cookies.remove("token");
+    setUser(null);
+    setIsAuthenticated(false);
+  };
+
+  useEffect(() => {
+    const checkLogin = async () => {
+      const cookies = Cookies.get();
+      if (!cookies.token) {
+        setIsAuthenticated(false);
+        setLoading(false);
+        return;
+      }
+
+      try {
+        const res = await verifyTokenRequest(cookies.token);
+        console.log(res);
+        if (!res.data) return setIsAuthenticated(false);
+        setIsAuthenticated(true);
+        setUser(res.data);
+        setLoading(false);
+      } catch (error) {
+        setIsAuthenticated(false);
+        setLoading(false);
+      }
+    };
+    checkLogin();
+  }, []);
+
+
   return (
     <AuthContext.Provider
       value={{
         user,
         signup,
+        logout,
+        loading,
         signin,
         isAuthenticated,
         errors

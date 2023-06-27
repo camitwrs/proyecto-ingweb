@@ -1,6 +1,7 @@
 import User from "../models/user.model.js"
 import bcrypt from "bcryptjs"
 import { createAccesToken } from "../libs/jwt.js"
+import { SECRET_TOKEN } from "../globalconfig.js";
 
 export const register = async (req, res) => {
 
@@ -89,3 +90,21 @@ export const getProfile = async (req, res) => {
     nombre: userFound.nombre 
   })
 }
+
+export const verifyToken = async (req, res) => {
+  const { token } = req.cookies;
+  if (!token) return res.send(false);
+
+  jwt.verify(token, SECRET_TOKEN, async (error, user) => {
+    if (error) return res.sendStatus(401);
+
+    const userFound = await User.findById(user.id);
+    if (!userFound) return res.sendStatus(401);
+
+    return res.json({
+      id: userFound._id,
+      nombre: userFound.nombre,
+      correo: userFound.correo,
+    });
+  });
+};
